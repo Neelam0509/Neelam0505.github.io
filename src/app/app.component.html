@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-sm" [ngClass]="themecolor">
+  <div class="container-fluid">
+    <a class="navbar-brand text-danger" href="#">{{title}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link " aria-current="page"
+        routerLinkActive="active"
+         [routerLink]="['/home']">Home</a>
+      </div>
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page"
+        routerLinkActive="active"
+         [routerLink]="['/products']">Products</a>
+      </div>
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page"
+        routerLinkActive="active"
+         [routerLink]="['/profile']">Profile</a>
+      </div>
+      <div class="navbar-nav">
+        <button class="nav-link active" (click)="toggletheme()" >click here</button>
+      </div>
+      <div class="navbar-nav">
+        <button class="nav-link bg-light position-absolute top-0 end-0" (click)="getcartCount()"><i class="bi bi-cart3">
+          <span class="badge text-bg-info">{{cartCount}}</span>
+        </i></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<p appHighlight>highlight me</p>
+<div class="container mt-3">
+<h1></h1>
+<router-outlet></router-outlet>
+
+</div>
+

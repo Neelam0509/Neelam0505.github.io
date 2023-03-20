@@ -1,0 +1,65 @@
+{
+  "products":[
+    {
+    "image":"assets/iphone.jpeg",
+    "id":1,
+    "name":"iphone",
+    "price":67000.674,
+    "publishdate":"Mon Feb 13 2023 19:17:50 GMT+0530 (India Standard Time) ",
+    "code":"m-11",
+    "rating":5,
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea esse quisquam molestias nostrum cupiditate animi ex repellendus repellat dolorem amet, iste praesentium eius molestiae tenetur officia reiciendis quos culpa!"
+  },
+  {
+"image":"assets/TV.png",
+  "id":2,
+  "name":"tv",
+  "price":97000,
+"publishdate":"Mon Feb 13 2023 19:17:50 GMT+0530 (India Standard Time) ",
+  "code":"M-11",
+  "rating":4,
+  "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea esse quisquam molestias nostru eius molestiae tenetur officia reiciendis quos culpa!"
+},
+{
+  "image":"assets/vivo.png",
+"id":3,
+"name":"vivo phone",
+"price":7000,
+"publishdate":"Mon Feb 13 2023 19:17:50 GMT+0530 (India Standard Time) ",
+"code":"M-11",
+"rating":4.5,
+"description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ea esse i ex repellendus repellat dolorem amet, iste praesentium eius molestiae tenetur officia reiciendis quos culpa!"
+},
+{
+"image":"assets/fridge.webp",
+"id":4,
+"name":"fridge",
+"price":45000,
+
+"publishdate":"Mon Feb 13 2023 19:17:50 GMT+0530 (India Standard Time) ",
+"code":"M-11",
+"rating":3.5,
+"description":"Lorem ipsum dolor sit amet consectetur adipisicianimi ex repellendus repellat dolorem amet, iste praesentium eius molestiae tenetur officia reiciendis quos culpa!"
+},
+{
+"image":"assets/LGwashingmachine.jpg",
+"id":5,
+"name":"washing machine",
+"price":45000,
+"publishdate":"Mon Feb 13 2023 19:17:50 GMT+0530 (India Standard Time) ",
+"code":"M-11",
+"rating":4.7,
+"description":"Lorem ipsum dolor sit amet consectetur adipisicing animi ex repellendus repellat dolorem amet, iste praesentium eius molestiae tenetur officia reiciendis quos culpa!"
+  },
+  {
+"image":"assets/samsung.webp",
+  "id":6,
+    "name":"oven",
+    "price":45000,
+    "publishdate":"Mon Feb 13 2023 19:17:50 GMT+0530 (India Standard Time) ",
+    "code":"M-11",
+    "rating":3,
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicin animi ex repellendus repellat dolorem amet, iste praesentium eius molestiae tenetur officia reiciendis quos culpa!"
+    }
+  ]
+}

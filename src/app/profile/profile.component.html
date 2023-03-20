@@ -1,0 +1,62 @@
+<!--<input type="text" id="name" [formControl]="name">
+<button class="btn btn-primary" (click)="updateName()">update</button>
+{{name.value | json}}-->
+<form [formGroup]="profile" (ngSubmit)="profile.valid && submitForm()">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" formControlName="name">
+    <div class="alert alert-danger"  *ngIf="namectr.dirty && namectr.invalid">
+    <!--<div *ngIf="namectr.errors?.['required']">
+      Name is required.
+    </div>
+    <div *ngIf="namectr.errors?.['minlength']">
+      Name must be atleast 3 characters
+    </div>-->
+    <div *ngIf="namectr.hasError('required')">
+      Name is required.
+    </div>
+    <div *ngIf="namectr.hasError('minlength')">
+      Name must be atleast {{namectr.errors!['minlength'].requiredLength}}.
+    </div>
+    <div *ngIf="namectr.hasError('forbidden')">
+      This Name {{namectr.errors!['forbidden']}} not allowed
+    </div>
+   </div>
+ </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" formControlName="email">
+  </div>
+  <div formArrayName="mobiles" class="no-validation">
+    <button class="btn btn-primary" (click)="addMobile()">Add Mobile</button>
+  <div class="mb-3" *ngFor="let mobile of mobiles.controls;let i= index">
+    <label for="mobile-{{i}}" class="form-label">Mobile</label>
+    <input type="number" class="form-control" id="mobile-{{i}}" [formControlName]="i">
+  </div>
+</div>
+  <div formGroupName="address" class="no-validation">
+    <h3>Address</h3>
+    <div class="mb-3">
+      <label for="street" class="form-label">street</label>
+      <input type="text" class="form-control" id="street" formControlName="street">
+    </div>
+    <div class="mb-3">
+      <label for="city" class="form-label">city</label>
+      <input type="text" class="form-control" id="city" formControlName="city">
+    </div>
+    <div class="mb-3">
+      <label for="state" class="form-label">state</label>
+      <input type="text" class="form-control" id="state" formControlName="state">
+    </div>
+    <div class="mb-3">
+      <label for="zip" class="form-label">zip</label>
+      <input type="number" class="form-control" id="zip" formControlName="zip">
+    </div>
+  </div>
+
+ <button type="submit" class="btn btn-primary" [disabled]="profile.invalid">Submit</button>
+</form>
+<button class="btn btn-primary"
+(click)="updateForm()">update</button>
+{{profile.value | json}}
